@@ -1,0 +1,410 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+    z-index: 1;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 10px;
+    padding: 3px;
+}
+
+#logo img{
+    height: 78px;
+    width: 110px;
+    border-radius: 16px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: white;
+    margin: 20px;
+    display: block;
+    padding: 4px 20px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 18px;
+}
+
+
+/* Home Section */
+
+#home{
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    height: 683px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#home::before{
+    content: "";
+    background: url("/Images/Home/home1.jpg") no-repeat center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 862px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+.home-div{
+    width: 100%;
+    height: 520px;
+    margin: 18px 35px;
+    justify-content: left;
+    border-radius: 15px;
+
+}
+
+.home-div div{
+    display: block;
+    height: 170px;
+}
+
+.home-div div h1{
+    height: 35px;
+    text-align: left;
+    font-size: 3.2rem;
+    color: rgb(76 56 56);
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.home-div div p{
+    font-size: 2.1rem;
+    text-align: left;
+    padding: 10px;
+    color: rgb(15, 15, 15);
+    font-family: 'Bree Serif', serif;
+}
+
+.home-div .btn button{
+    margin-left: 157px;
+    margin-top: 45px;
+    height: 78px;
+    width: 359px;
+    border-radius: 18px;
+    font-size: 1.6rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.home-div .btn button a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-div .btn button:hover{
+    background-color: rgb(34, 119, 153);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.home-image img{
+    display: block;
+    margin: auto;
+    padding: 15px;
+    height: 385px;
+    border-radius: 23px;
+}
+
+
+/* Course Curriculum Section */
+
+#course-container{
+    height: 556px;
+}
+
+.course{
+    margin: 16px 75px;
+    display: flex;
+}
+
+.box{
+    margin: 10px 44px;
+    padding: 8px;
+    align-content: center;
+    justify-content: center;
+}
+
+.box ul li{
+    font-size: 1.7rem;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#course-container div button{
+    height: 54px;
+    width: 208px;
+    border-radius: 42px;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+#course-container div button a{
+    text-decoration: none;
+    color: black;
+}
+
+#course-container div button:hover{
+    background-color: rgb(34, 119, 153);
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#course-container .button{
+    padding: 20px;
+}
+
+
+/* Advantages Container */
+
+#advantages-container{
+    height: 792px;
+}
+
+#advantages-container::before{
+    content: "";
+    background: url('/Images/Advantages/advantages.png') no-repeat bottom/cover;
+    position: absolute;
+    left: 0px;
+    height: 792px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#advantages{
+    margin: 44px 14px;
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+}
+
+.adv{
+    height: 404px;
+    width: 100%;
+    margin: 16px;
+    padding-top: 10px;
+    background-color: skyblue;
+    border-radius: 12px;
+}
+
+
+#advantages .adv .adv-image{
+    display: block;
+    height: 247px;
+}
+
+#advantages .adv img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+#advantages .adv .para{
+    display: block;
+    padding: 14px;
+    height: 90px;
+    font-family: 'Baloo Bhai 2', cursive; 
+    font-size: 1.3rem;
+}
+
+
+/* Student Reviews */
+
+#review-container{
+    height: 768px;
+}
+
+#review-container::before{
+    content: "";
+    background-color: #c6ffac;
+    position: absolute;
+    left: 0px;
+    height: 768px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+#stu-reviews{
+    height: 624px;
+    margin: 28px 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.review{
+    height: 543px;
+    width: 100%;
+    padding: 0px 106px;
+    margin: 34px;
+}
+
+.review-image{
+    padding: 34px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.review-image img{
+    display: block;
+    margin: auto;
+    padding-top: 42px;
+    border-radius: 116px;
+}
+
+.rating{
+    padding: 12px;
+    height: 158px;
+}
+
+.rating p{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+/* Contact Us */
+
+#contact-container{
+    position: relative;  
+}
+
+#contact-container::before{
+    content: "";
+    position: absolute;
+    background: url('/Images/contact.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.80;
+    
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 56px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 32px;
+}
+
+#contact-box form button{
+    height: 54px;
+    width: 208px;
+    border-radius: 42px;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box form button:hover{
+    background-color: rgb(34, 119, 153);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#contact-box form .button{
+    padding: 32px;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px 10px;
+
+}
+
+
+
+
+/* Utility Functions */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.6rem;
+    padding: 16px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+  }
+
+
