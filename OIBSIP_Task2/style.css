@@ -1,0 +1,477 @@
+:root{
+    --primary: #3dcfd3;
+    --dark: #161616;
+    --pure: #ffffff;
+    --ternery: #898989;
+    --light: #f2f2f2;
+    --secondary: #070606;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+
+#navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#navbar::before{
+    content: '';
+    background-color: var(--secondary);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.logo{
+    padding: 20px 0px 20px 77px;
+}
+
+.logo img{
+    height: 58px;
+}
+
+nav div h2{
+    padding: 25px 20px 20px 8px;
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+    color: var(--pure);
+}
+
+nav div ul{
+    display: flex;
+    padding: 17px 82px;
+    align-items: flex-end;
+}
+
+nav div ul li{
+    padding: 20px 35px;
+    list-style: none;
+}
+
+nav div ul li a{
+    align-items: flex-end;
+    margin: 20px;
+    padding: 4px 20px;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+nav div ul li a:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 28px;
+}
+
+.right{
+    padding: 17px;
+}
+
+.right button{
+    margin-top: 10px;
+    height: 51px;
+    width: 196px;
+    font-size: 21px;
+    border-radius: 24px;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: var(--light);
+    box-shadow: 2px 4px var(--primary);
+}
+
+.right button a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+/* Home */
+
+#home-container{
+    height: 1020px;
+}
+
+#home-container::before{
+    content: '';
+    background-color: var(--secondary);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1020px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#home{
+    display: flex;
+    flex-direction: row;
+    padding: 122px;
+}
+
+#home div{
+    width: 100%;
+}
+
+.intro{
+    padding: 98px;
+}
+
+.intro span{
+    font-size: 26px;
+    font-family: 'Arvo', serif;
+    color: var(--primary);
+}
+
+.intro .name{
+    font-size: 72px;
+    font-family: 'Arvo', serif;
+    color: var(--pure);
+    padding: 29px 0px;
+}
+
+.intro .name span{
+    font-size: 72px;
+    font-family: 'Arvo', serif;
+    color: var(--primary);
+}
+
+
+.intro .work{
+    font-size: 38px;
+    font-family: 'Arvo', serif;
+    color: var(--primary);
+}
+
+.intro .text{
+    color: var(--light);
+    padding: 30px 0px;
+    margin-bottom: 28px;
+    font-size: 24px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.intro button{
+    height: 68px;
+    width: 180px;
+    border-radius: 34px;
+    margin-right: 43px;
+    font-size: 23px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.intro button a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.intro .btn1{
+    background-color: var(--primary);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.profile-img{
+    display: flex;
+    justify-content: end;
+    padding: 52px;
+}
+
+.profile-img img{
+    border-radius: 267px;
+}
+
+
+/* About  */
+
+#about-container{
+    height: 964px;
+}
+
+#about{
+    margin: 88px 110px;
+    padding: 288px 0px;
+    display: flex;
+}
+
+.aboutme{
+    width: 100%;
+    padding: 0px 28px;
+}
+
+.about-heading{
+    font-size: 46px;
+    padding-bottom: 34px;
+    font-family: 'Arvo', serif;
+    color: var(--secondary);
+}
+
+.about-text{
+    font-size: 30px;
+    padding-right: 23px;
+    color: var(--ternery);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+.connect{
+    margin-left: 84px;
+    padding: 0px 28px 20px 28px;
+    width: 100%;
+}
+
+.connect-heading{
+    font-size:44px;
+    font-family: 'Arvo', serif;
+    padding-bottom: 23px;
+    color: var(--secondary);
+}
+
+.connect-text{
+    font-size: 28px;
+    padding-right: 23px;
+    padding-bottom: 14px;
+    margin-bottom: 37px;
+    color: var(--ternery);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#favi{
+    padding: 6px;
+}
+
+#favi a{
+    padding-top: 34px;
+    padding-right: 12px;
+    
+}
+
+#favi a img{
+    height: 44px;
+}
+
+/* Skills Container */
+
+#skills{
+    margin: 56px;
+    padding: 34px;
+}
+
+#skills h1{
+    color: var(--dark);
+    font-size: 46px;
+    margin-top: 98px;
+    font-family: 'Arvo', serif;
+}
+
+#skills h2{
+    color: var(--ternery);
+    font-family: 'Arvo', serif;
+}
+
+.item1{
+    display: flex;
+    justify-content: center;
+}
+
+.item1 div img{
+    height: 220px;
+    padding: 26px 68px;
+    margin: 13px 44px;
+}
+
+.item2{
+    display: flex;
+    justify-content: center;
+    height: 366px;
+}
+
+.item2 div{
+    height: 134px;
+    padding: 12px;
+    margin: 34px;
+}
+
+.item2 div img{
+    height: 186px;
+    padding: 6px 42px;
+    margin: 4px 44px;
+}
+
+
+/* Projects Container */
+
+#projects-container{
+    background-color: var(--ternery);
+}
+
+#project{
+    /* margin: 44px; */
+    padding-top: 128px;
+    padding-bottom: 50px;
+}
+
+#project h3{
+    font-size: 28px;
+    color: var(--pure);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#project h1{
+    color: var(--dark);
+}
+
+.proj1{
+    display: flex;
+}
+
+.proj1 div{
+    padding: 12px;
+    margin: 34px;
+}
+
+.proj1 div img{
+    height: 344px;
+    width: 100%;
+}
+
+.proj2{
+    display: flex;
+    justify-content: center;
+}
+
+.proj2 div{
+    padding: 12px 12px 12px 12px;
+    margin:  48px 48px 48px 48px;
+}
+
+.proj2 div img{
+    height: 344px;
+    width: 511px;
+    
+}
+
+
+/* Contact Container */
+
+#contact-container{
+    background-color: var(--dark);
+    opacity: 0.89;
+}
+
+#contact{
+    /* margin: 34px; */
+    padding: 156px 34px 176px 34px;
+}
+
+.contact1{
+    display: flex;
+    justify-content: center;
+    margin: 67px 28px 21px 28px;
+    font-size: 24px;
+}
+
+#contact h1{
+    color: var(--primary);
+    font-family: 'Arvo', serif;
+}
+
+.contact1 div{
+    margin: 22px 26px;
+}
+
+.contact1 div input{
+    height: 64px;
+    width: 344px;
+    padding: 8px;
+    border-radius: 42px;
+    font-size: 24px;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: var(--secondary);
+    color: var(--ternery);
+}
+
+.contact2 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact2 textarea{
+    height: 196px;
+    width: 1140px;
+    border-radius: 42px;
+    padding: 22px;
+    font-size: 24px;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: var(--secondary);
+    color: var(--ternery);
+}
+
+#contact .btn{
+    display: flex;
+    justify-content: center;
+}
+
+#contact .btn button{
+    margin: 46px;
+    height: 66px;
+    width: 234px;
+    border-radius: 36px;
+    font-size: 24px;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+
+/* Footer */
+
+.footer{
+    height: 64px;
+    background-color: var(--secondary);
+    color: var(--pure);
+    text-align: center;
+    padding-top: 33px;
+    font-family: 'Arvo', serif;
+}
+
+
+
+
+/* Utility Functions */
+
+.h-primary{
+    font-size: 48px;
+    padding: 32px;
+    font-family: 'Arvo', serif;
+}
+
+.h-secondary{
+    font-size: 40px;
+    padding: 22px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
